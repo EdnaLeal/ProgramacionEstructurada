@@ -38,6 +38,9 @@ int main()
 		{
 			printf(" %3d ", mat[i][j]*num);
 		}
+	
 	printf("\n");
 	}
+	
+	return 0;
 }
