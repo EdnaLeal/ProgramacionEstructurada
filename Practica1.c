@@ -1,4 +1,4 @@
-//Primera Práctica
+//Primera Practica
 
 #include <stdio.h>
 
