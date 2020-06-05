@@ -1,38 +1,46 @@
-/* Edna Leal 1913447 */
+/* Edna Leal, 1913447*/
 
 #include <stdio.h>
-#include<stdbool.h>
 
 int main()
 {
-	int max, NumEvaluar, div, res, indice;
-	bool Numeros[100], EsDivisible;
+	int i=0, j=0, num=0, mat[3][3];
+	printf("Imprimir la matriz original y la multiplicada por un constante\n\n");
 	
-	printf("Numero maximo:\n");
-	scanf("%d", &max);
-	for(indice=0; indice<max; indice++)
+	for(i=0 ; i<3 ; i++)
 	{
-		//Es primo
-		NumEvaluar = indice + 1;
-		res = 1;
-		EsDivisible = res == 0;
-		div=2;
-		
-		while(div<NumEvaluar && EsDivisible == false)
+		for(j=0 ; j<3 ; j++)
 		{
-			res = NumEvaluar % div;
-			//printf("p?:%d n:%d r:%d \n", NumEvaluar, div, res);
-			EsDivisible = res == 0;
-			div++;
+			printf("Ingresa un numero de la matriz:");
+			scanf("%d", &mat[i][j]);
 		}
-		//printf("Es primo? %d\n", EsDivisible);
-		Numeros[indice] =! EsDivisible;
+	printf ("\n");
 	}
 	
-	printf("\nResultado\n");
-	for(indice=0; indice<max; indice++)
+	printf("\nIngrese el numero a multiplicar por la matriz: ");
+	scanf("%d", &num);
+	printf("\nLa matriz es: \n");
+	
+	for(i=0 ; i<3 ; i++)
 	{
-		NumEvaluar = indice + 1;
-		printf("Numero: %d es primo: %d\n", NumEvaluar, Numeros[indice]);
+		for(j=0 ;  j<3 ; j++)
+		{
+			printf("%4d", mat[i][j]);
+		}
+	printf ("\n");
 	}
+	
+	printf("La matriz multiplicada es:\n");
+	
+	for(i=0 ; i<3 ; i++)
+	{
+		for(j=0 ; j<3 ; j++)
+		{
+			printf(" %3d ", mat[i][j]*num);
+		}
+	
+	printf("\n");
+	}
+	
+	return 0;
 }
