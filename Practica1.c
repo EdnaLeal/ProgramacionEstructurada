@@ -1,4 +1,4 @@
-//Primera Pr·ctica
+//Primera Pr√°ctica
 
 #include <stdio.h>
 
