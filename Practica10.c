@@ -23,12 +23,12 @@ int main()
 
 	do
 	{
-		printf ("\nIngrese el primer nombre: ", &estudiante.nombre);
+		printf ("\nIngrese el primer nombre: ");
 		fflush (stdin);
 		gets (estudiante.nombre);
 	
 	
-		printf ("\nIngrese el primer apellido: ", &estudiante.apellido);
+		printf ("\nIngrese el primer apellido: ");
 		fflush (stdin);
 		gets (estudiante.apellido);
 	
@@ -36,7 +36,7 @@ int main()
 		do
 		{
 			printf ("\nIngrese su dia de cumplea%cos: ", 164);
-			scanf ("%d/%d/%d",&estudiante.cumple.dia);
+			scanf ("%d",&estudiante.cumple.dia);
 			if (estudiante.cumple.dia<=0 || estudiante.cumple.dia>31)
 				printf ("\nEl dia tiene que estar entre 1 y 31\n");
 		}while (estudiante.cumple.dia<=0 || estudiante.cumple.dia>31);
@@ -45,7 +45,7 @@ int main()
 		do
 		{
 		   printf ("\nIngrese su mes de cumplea%cos: ", 164);
-			scanf ("%d/%d/%d",&estudiante.cumple.mes);
+			scanf ("%d",&estudiante.cumple.mes);
 			if (estudiante.cumple.mes<=1 || estudiante.cumple.mes>12)
 				printf ("\nEl mes tiene que estar entre 1 y 12\n");	
 		}while (estudiante.cumple.mes<=1 || estudiante.cumple.mes>12);
@@ -54,7 +54,7 @@ int main()
 		do
 		{
 		   printf ("\nIngrese su a%co de nacimiento: ", 164);
-			scanf ("%d/%d/%d",&estudiante.cumple.anio);
+			scanf ("%d",&estudiante.cumple.anio);
 			if (estudiante.cumple.anio>2020)
 				printf ("\nEl mes tiene que ser mayor a 0 y menor a 2021\n");	
 		}while (estudiante.cumple.anio>2020);
